@@ -1,6 +1,6 @@
 import type { RuntimeWorktreeCreateResult } from '../../shared/runtime-types'
 
-function getLineageSourceLabel(source: string): string {
+export function getLineageSourceLabel(source: string): string {
   switch (source) {
     case 'terminal-context':
       return 'terminal'

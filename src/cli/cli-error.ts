@@ -12,11 +12,13 @@ export type CliErrorContext = {
   commandPath?: readonly string[]
   /** The `--worktree` value this invocation sent; the runtime's error never echoes it. */
   worktreeSelector?: string
+  /** The `--parent-worktree` value, when the command resolved one too. */
+  parentWorktreeSelector?: string
 }
 
 function selectorRecovery(code: string | undefined, context: CliErrorContext) {
   return code === 'selector_not_found' && context.worktreeSelector
-    ? worktreeSelectorRecovery(context.worktreeSelector)
+    ? worktreeSelectorRecovery(context.worktreeSelector, context.parentWorktreeSelector)
     : undefined
 }
 
