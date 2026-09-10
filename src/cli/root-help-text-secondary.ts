@@ -54,6 +54,7 @@ export const ROOT_HELP_TEXT_SECONDARY = [
   '  orca worktree set --worktree <selector> [--display-name <name>] [--issue <number|null>] [--linear-issue <identifier-or-url|null>] [--comment <text>] [--workspace-status <id>] [--parent-worktree <selector>|--no-parent] [--json]',
   '  orca worktree rm --worktree <selector> [--force] [--run-hooks] [--json]',
   '  orca worktree ps [--limit <n>] [--json]',
+  '  orca worktree lineage [--worktree <selector>] [--json]',
   '  orca file open <path> [--worktree <selector>] [--json]',
   '  orca file diff <path> [--staged] [--worktree <selector>] [--json]',
   '  orca file open-changed [--mode edit|diff|both] [--worktree <selector>] [--json]',

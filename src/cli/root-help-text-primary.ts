@@ -71,6 +71,7 @@ export const ROOT_HELP_TEXT_PRIMARY = [
   '  worktree set              Update Orca metadata for a worktree',
   '  worktree rm               Remove a worktree from Orca and git',
   '  worktree ps               Show a compact orchestration summary across worktrees',
+  '  worktree lineage          Show recorded worktree and folder-workspace lineage',
   '',
   'Files:',
   '  file open                 Open a workspace file in the Orca editor',
